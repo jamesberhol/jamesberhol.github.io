@@ -20,7 +20,7 @@
 }
 
 .links ul li a:hover {
-    color: #111526;
+    color: white;
     background-color: black;
 }
 
@@ -103,6 +103,6 @@
 }
 
 .alt a:hover {
-    color: #111526;
+    color: white;
     background-color: black;
 }
