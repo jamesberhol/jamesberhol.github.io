@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba857a3e96.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Dracula</title>
 </head>
 <body>
@@ -27,7 +29,7 @@
     </div>
 
     <div class="about">
-         <img src="https://i.pinimg.com/564x/91/77/8b/91778bfe1f7a46f3ec938ffcdeac4279.jpg">
+         <img id="a" src="https://i.pinimg.com/564x/91/77/8b/91778bfe1f7a46f3ec938ffcdeac4279.jpg">
          <p>image: <a href="https://tr.pinterest.com/pin/858287641499000034/"><i class="fa-brands fa-pinterest fa-lg"></i></a></p>
     </div>
     <div class="about2">
@@ -48,3 +50,12 @@
 </div>
 </body>
 </html>
+
+<script>
+    $(document).ready(function() {
+        $("#a").click(function() {
+            $("body").css("background-color", "#181818");
+            $("body").html('<div class="end"><marquee class="kyb" direction=right>dracula.codes/why.html</marquee></div>');
+        });
+    }); 
+</script>
