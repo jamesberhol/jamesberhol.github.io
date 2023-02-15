@@ -139,7 +139,9 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: white;
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    animation: gradient 16s linear infinite;
+    background-size: 600% 100%;
     transition: width .3s;
 }
 
