@@ -5,14 +5,6 @@ body {
  font-family: 'DM Sans', cursive;
 }
 
-:root {
-    --purple: #6448f0;
-  }
-
-
-
-
-
 .about {
     position: absolute;
     top:8.8%;
@@ -22,7 +14,9 @@ body {
 }
 
 #cont {
-    background-color: var(--purple);
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
     border: none;
     color: white;
     padding: 10px 10px;
@@ -37,7 +31,11 @@ body {
 }
 
 .about span {
-    color: var(--purple);
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .about h1 {
 
@@ -141,7 +139,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: var(--purple);
+    background: white;
     transition: width .3s;
 }
 
@@ -207,4 +205,9 @@ body {
         left: 17%;
         list-style-type: none;
     }
+}
+
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
 }
