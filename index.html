@@ -11,13 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-      
-    <div class="about">
-          <img src="https://cdn.discordapp.com/avatars/749662804847624242/ffc0ffea0a083f18c7e7572c18393e8b.png?size=128">
-          <h1>Hey, I'm <span>dracula</span></h1>
-          <p>I'm a  developer from Turkey. I'm currently working on my own projects and learning new things.          </p>
-          <button id="cont"><i class="fa-solid fa-envelope"></i></button>
-        </div>
+
     <div class="about2">
         <ul>
             <li>
@@ -27,10 +21,18 @@
                 <div id="css"><p class="tit">CSS</p><p><span class="elem2">.name</span><span class="elem4"> {</span><span class="elem5"> color</span><span class="elem4">: </span><span class="elem4">white</span><span class="elem4"> }</span></p></div>
             </li>
             <li>
-                <div id="js"><p class="tit">JS</p><p> <span class="elem2">var </span> <span class="elem6">name </span> <span class="elem4">= </span><span class="elem5">document</span><span class="elem4">.</span><span class="elem2">getElementById</span><span class="elem">(</span><span class="elem3">"name"</span><span class="elem">)</span><span class="elem4">.</span><span class="elem6">value</span><span class="elem4">;</span></p><p><span class="elem5">alert</span><span class="elem">(</span><span class="elem6">name</span><span class="elem">)</span><span class="elem4">;</span></p></div>
+                <div id="js"><p class="tit">JS</p><p> <span class="elem2">var </span> <span class="elem6">name </span> <span class="elem4">= </span><span class="elem5">document</span><span class="elem4">.</span><span class="elem2">getElementById</span><span class="elem">(</span><span class="elem3">"name"</span><span class="elem">)</span><span class="elem4">.</span><span class="elem6">innerHTML</span><span class="elem4">;</span></p><p><span class="elem5">alert</span><span class="elem">(</span><span class="elem6">name</span><span class="elem">)</span><span class="elem4">;</span></p></div>
             </li>
         </ul>
     </div>
+    <div class="about">
+        <img src="https://cdn.discordapp.com/avatars/749662804847624242/ffc0ffea0a083f18c7e7572c18393e8b.png?size=128">
+        <ul>
+          <li><h1>Hey, I'm <span>dracula</span> <button id="cont"><i class="fa-solid fa-envelope"></i></button></h1></li>
+          <li><p>I'm a  developer from Turkey. I'm currently working on my own projects and learning new things.          </p></li>
+
+        </ul>  
+  </div>
     <div class="about3">
        
     </div>
@@ -60,7 +62,7 @@
                 $("#name").css("color", "white");
             });
             $("#js").click(function() {
-                var name = document.getElementById("name").value;
+                var name = document.getElementById("name").innerHTML;
                 alert(name);
             });
             $('#cont').mouseenter(function () {
